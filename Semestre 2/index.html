@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP FATEC</title>
+    <style>
+*{margin: 0 auto;
+border: 0;}
+   
+    #background{
+
+        height: 100vw;
+        width: 100vh;
+    }
+    header{
+        text-align: center;
+        padding: 1px;
+        background-color: blue;
+        color:aliceblue;
+    }   
+    nav{
+        display: flex;
+        text-decoration: none;
+        padding: 5px;
+    }
+    nav ul li{
+        display: inline;
+       
+        
+    } 
+    nav ul li a{
+        font-family: Arial, Helvetica, sans-serif;
+text-decoration: none;
+font-weight: 600;
+
+    }
+    </style>
+    
+</head>
+<body>
+   
+    
+    <header>        
+        <h1>INDEX TABLE TEST</h1>  
+    </header>
+    <nav>
+        <ul><li><a href="#">Home</a></li></ul>
+        <ul><li><a href="#">Index</a></li></ul>
+        <ul><li><a href="#">Label</a></li></ul>
+        <ul><li><a href="#">Pan</a></li></ul>
+        <ul><li><a href="#">Zoom</a></li></ul>
+    </nav>
+
+    <div id="background">
+        
+    </div>
+</body>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+<script>
+VANTA.BIRDS({
+  el: "#background",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00
+})
+</script>
+</html>
